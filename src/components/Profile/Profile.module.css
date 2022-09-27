@@ -1,0 +1,75 @@
+.profile {
+    background-color: white;
+    border-radius: 25px;
+    /* width: 520px; */
+    /* padding: 50px; */
+}
+
+.description {
+    /* display: flex; */
+    text-align: center;
+    color: rgb(136, 131, 131);
+    margin-bottom: 100px;
+    /* margin: 0; */
+    /* background-color: red; */
+}
+
+.avatar {
+    background-color: silver;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    /* width: 200px; */
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 75px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.tag {
+    margin: 0;
+    margin-bottom: 40px;
+}
+.location {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.stats {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+
+    display: flex;
+
+    background-color: rgb(241, 229, 229);
+
+        /* align-items: center;
+            justify-content: end;
+            align-content: flex-end;
+            align-items: center; */
+    
+}
+
+.stats__item {
+    border: 1px solid silver;
+    padding: 20px;
+    margin: 0;
+    width: 200px;
+    height: 100px;
+
+    /* display: flex; */
+    
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    /* align-content: flex-end; */
+    /* align-items: center; */
+
+    
+}
