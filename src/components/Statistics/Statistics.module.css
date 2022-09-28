@@ -25,6 +25,16 @@
     height: 100px;
 
     font-weight: bold;
+
+    border-radius: 15px;
+
+    margin: 5px;
     /* color: rgb(9, 78, 228); */
     /* outline: auto; */
+}
+
+.item:hover,
+:focus {
+    scale: 1.2;
+    cursor: pointer;
 }
