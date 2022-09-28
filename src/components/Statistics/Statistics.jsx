@@ -23,34 +23,15 @@ function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-// const itemEl = document.querySelector({css.item});
-
-
-
-// console.log(itemEl)
 
 // Statistics.PropTypes = {
-//     title: PropTypes.string.isRequired,
-//     stats: PropTypes.arrayOf(
-//         PropTypes.objectOf({
+//     // title: PropTypes.string.isRequired,
+//     stats: PropTypes.arrayOf(PropTypes.shape({
 //             id: PropTypes.string.isRequired,
 //             label: PropTypes.string.isRequired,
-//             percentage: PropTypes.number.isRequired
-//         }),
+//             percentage: PropTypes.number.isRequired}
+//         ),
 //     ),
 // };
 
 
-// Profile.propTypes = {
-//     props: PropTypes.exact ( { 
-//             username: PropTypes.string.isRequired,
-//             tag: PropTypes.string.isRequired, 
-//             location: PropTypes.string.isRequired, avatar: PropTypes.string.isRequired,
-//             stats: PropTypes.objectOf({
-//                 followers: PropTypes.number,
-//                 views: PropTypes.number,
-//                 likes: PropTypes.number,
-//         }),
-//     } )
-    
-// };
