@@ -1,13 +1,15 @@
 import { Profile } from "./Profile/Profile";
 import { Statistics } from "./Statistics/Statistics";
 import { FriendList } from "./FriendList/FriendList";
+import {TransactionHistory} from "./TransactionHistory/TransactionHistory"
+
 // import { Friend } from "./FriendList/Friend";
-// import
+
 import user from '../jsonData/user.json'
 import data from '../jsonData/data.json';
-// import friends from '../jsonData/friends.json';
 
-// console.log(Profile)
+
+// import friends from '../jsonData/friends.json';
 
 
 export const App = () => {
@@ -33,6 +35,8 @@ export const App = () => {
       <FriendList>
         {/* <Friend friends={friends}/> */}
       </FriendList>
+      <TransactionHistory/>
+     
     </div>
   );
 };
