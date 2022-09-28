@@ -50,10 +50,18 @@
 
 .stats__item {
     border: 1px solid silver;
+    border-radius: 15px;
+    background-color: inherit;
 
     padding: 20px;
     margin: 0;
 
     width: 200px;
     height: 100px;
+}
+
+.stats__item:hover,
+:focus {
+    scale: 1.2;
+    cursor: pointer;
 }
