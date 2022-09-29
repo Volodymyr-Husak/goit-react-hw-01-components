@@ -4,9 +4,6 @@ import css from "./TransactionHistory.module.css"
 // import transactions from "../../jsonData/transactions.json"
 // console.log(transactions)
 
-// массив.map((element, index, array) => {
-//   // Тіло колбек-функції
-// });
 
 export const TransactionInfo = ({ items }) => {
   
