@@ -1,29 +1,21 @@
 import { TransactionInfo } from "./TransactionInfo"
 import transactions from "../../jsonData/transactions.json"
+import css from "./TransactionHistory.module.css"
 // console.log(transactions)
 export const TransactionHistory = () => {
     return (
-        <table class="transaction-history">
-            <thead>
+        <table className={css.transaction_history}>
+            <thead className={css.transaction_history__head}>
                 <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Currency</th>
                 </tr>
             </thead>
 
             <tbody>
-                <TransactionInfo item={transactions} />
-                {/* <tr>
-                <td>Invoice</td>
-                <td>125</td>
-                <td>USD</td>
-                </tr>
-                <tr>
-                <td>Withdrawal</td>
-                <td>85</td>
-                <td>USD</td>
-                </tr> */}
+                <TransactionInfo items={transactions} />
+               
             </tbody>
         </table>
     )

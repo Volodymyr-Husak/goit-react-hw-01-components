@@ -1,37 +1,25 @@
 import propTypes from "prop-types";
+import css from "./TransactionHistory.module.css"
 // console.log({transactions})
-// export const TransactionInfo = ({transactions}) => {
-//     return (transactions.map(({id, type, amount, currency}) =>
-//             <tr key={id}>
-//                 <td>{type}</td>
-//                 <td>{amount}</td>
-//                 <td>{currency}</td>
-//             </tr>)
-//      )
- 
-// }
+// import transactions from "../../jsonData/transactions.json"
+// console.log(transactions)
 
-export const TransactionInfo = ({transactions}) => {
-    return (
-            <tr >
-                <td>lkjl</td>
-                <td>xxzx</td>
-                <td>ppp</td>
-            </tr>
-        
-    )
-     
+// массив.map((element, index, array) => {
+//   // Тіло колбек-функції
+// });
+
+export const TransactionInfo = ({ items }) => {
+  
+    return (items.map(({id, type, amount, currency}, index) =>
+            <tr  key={id} style={{ backgroundColor:  index % 2?'white':' rgb(183, 243, 224)'}}>
+                <td className={css.type}>{type}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
+            </tr>)
+     )
  
 }
-// export const Friend = ({friends}) => {
-//     return (friends.map(({id, isOnline, name, avatar}) => 
-//         <li className={css.item} key={id}>
-//             <span className={css.status} style={{ backgroundColor: getBackgroundColor(isOnline) }}></span>
-//             <img className={css.avatar} src={avatar} alt="User avatar" width="200" />
-//             <p className={css.name}>{name}</p>
-//         </li>)
-//     )
-// }
+
 
 TransactionInfo.propTypes = {
         transactions: propTypes.arrayOf(
