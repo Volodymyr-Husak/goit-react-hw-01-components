@@ -9,7 +9,6 @@ import user from '../jsonData/user.json'
 import data from '../jsonData/data.json';
 // import transactions from "../jsonData/transactions.json"
 
-
 // import friends from '../jsonData/friends.json';
 
 
@@ -33,6 +32,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
       <FriendList>
         {/* <Friend friends={friends}/> */}
       </FriendList>
