@@ -4,18 +4,11 @@ import propTypes from "prop-types";
 export const Friend = ({friends}) => {
     return (friends.map(({id, isOnline, name, avatar}) => 
         <li className={css.item} key={id}>
-            <span className={css.status} style={{ backgroundColor: getBackgroundColor(isOnline) }}></span>
+            <span className={css.status} style={{ backgroundColor:  isOnline? 'green': 'tomato'}}></span>
             <img className={css.avatar} src={avatar} alt="User avatar" width="200" />
             <p className={css.name}>{name}</p>
         </li>)
     )
-}
-
-function getBackgroundColor(bool) {
-    if (bool) {
-        return 'green';
-    }
-    return 'tomato';
 }
 
 Friend.propTypes = {
