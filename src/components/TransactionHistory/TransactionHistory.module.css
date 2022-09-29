@@ -1,0 +1,30 @@
+.transaction_history {
+    font-size: 50px;
+
+    text-align: center;
+    
+    margin-left: 50px;
+    
+    box-shadow: 20px 20px 20px 1px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.transaction_history__head {
+    background-color: rgb(40, 218, 161);
+}
+
+th {
+    padding: 25px;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.type {
+    text-align: start;
+}
+
+td {
+    padding: 25px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
