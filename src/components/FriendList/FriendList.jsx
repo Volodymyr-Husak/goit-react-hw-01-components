@@ -3,8 +3,6 @@ import { Friend } from "./Friend";
 
 import friends from '../../jsonData/friends.json';
 
-
-
 export const FriendList = () => {
     return (
         <ul className={css.friend_list}>
